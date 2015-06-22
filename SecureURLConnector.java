@@ -81,7 +81,7 @@ public class SecureURLConnector{
 
     }
 	} 
-
+ 
 
 	/**
 	*Calls the URL using a secure https connection and returns

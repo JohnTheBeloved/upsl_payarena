@@ -25,11 +25,10 @@ public class ProcessTransaction{
 	}
 
 	}
+  
 
-
-	public String getOrderURL(Transaction transaction,Card card) throws Exception
-	{
-		SecureURLConnector connector;
+	public String getOrderURL(Transaction transaction,Card card) throws
+	Exception { SecureURLConnector connector;
 		
 		try{
 		 connector = new SecureURLConnector(Constants.CERTIFICATE_PATH_UNIX,Constants.CERTIFICATE_PASSWORD,Constants.URL_TO_CONNECT);

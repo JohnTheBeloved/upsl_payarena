@@ -10,7 +10,7 @@ public class Constants{
 	public static final String MERCHANT_ID = "127.0.0.1";
 
 
-
+ 
 	//Non Mandatory Feilds
 
 
@@ -20,10 +20,13 @@ public class Constants{
 	public static final String ENCRYPTION_KEY = "0123456789abcdef";
 
 
-	//These feilds are used to store the path to the certificate generated for you by UPSL
-	public static final String CERTIFICATE_PATH_WINDOWS = "C:\\path\\to\\certificate\\certificatename.pfx";
-	public static final String CERTIFICATE_PATH_UNIX = "/home/john/develop/unifiedpayments/itex.pfx";
-	public static final String CERTIFICATE_PASSWORD = "cipg";
+    //These feilds are used to store the path to the certificate generated for
+//you by UPSL
+     public static final String CERTIFICATE_PATH_WINDOWS =
+"C:\\path\\to\\certificate\\certificatename.pfx";     public static final
+String CERTIFICATE_PATH_UNIX =
+"/Users/tolulopeogunremi/upsl_wepay/upsl_payarena/UNIGATEWAYTEST1.pfx";
+public static final String CERTIFICATE_PASSWORD = "123456";
 
 
 }
