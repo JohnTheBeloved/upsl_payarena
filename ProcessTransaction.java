@@ -117,7 +117,7 @@ public class ProcessTransaction{
 		reqdata += "<PAN>"+card.cardNumber+"</PAN>";
 		reqdata += "<EXPDATE_M>"+card.EXP_MONTH+"</EXPDATE_M>";
 		reqdata += "<EXPDATE_Y>"+card.EXP_YEAR+"</EXPDATE_Y>";
-		reqdata += "<CVV2>"+card.CVV2+"</CVV2>";
+		//reqdata += "<CVV2>"+card.CVV2+"</CVV2>";
 		//Please omit Card holder Name
 		reqdata += "<CHName></CHName>";
 		reqdata += "</ReqData>";
