@@ -59,7 +59,7 @@ public class TrippleDESTool{
 	public  String encryptStringData(String stringToEncrypt) throws UnsupportedEncodingException{
 
 		//Convert the String gotten to hexadecimal String
-		String StringInHex = ConversionUtils.stringToHex(stringToEncrypt) + "000000";
+		String StringInHex = ConversionUtils.stringToHex(stringToEncrypt) ;//+ "000000";
 		//Declare Encrypted String here
 		String encryptedString= "";
 		//Encrypt call
@@ -159,7 +159,8 @@ public class TrippleDESTool{
 		byte[] clearText = ConversionUtils.hexToBytes(dataToEncryptInHex);
 
 		CipherOutputStream out = new CipherOutputStream(bytes, cipher);
-		out.write(addPadding(clearText,0,clearText.length));
+		out.write(clearText);
+		//out.write(addPadding(clearText,0,clearText.length));
 		out.flush();
 		out.close();
 		byte[] ciphertext = bytes.toByteArray();
